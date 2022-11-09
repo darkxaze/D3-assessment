@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>D3 Assignment - AC 50002 2486853 Srivatsan Mohan</title>
+	<script type="text/javascript" src="d3.js"></script>
+	<script src="//d3js.org/topojson.v1.min.js"></script>
+	<script type="text/javascript" src="scripts.js" ></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align:center">UK Map visualization using D3,HTML,CSS </h1>
+	<div class="bground" id="background">
+		<div class="lside">
+            <div id="map" class="map">
+           </div>
+		</div>
+        <div class="rside">
+		    <div class="text" style="justify-content: center;">
+                <div class="card-content">
+                <h2 class="card_title">Select Number of Towns to display</h2>
+                <!-- <div class="range-wrap">
+                    <input type="range" class="range" min="0" max="500" value="0" step="5">
+                    <div class="value">
+                        <div></div>
+                    </div>
+                </div> -->
+                <div class="rangeslider">
+                    <input type="range" min="1" max="500" value="1"
+                                    class="myslider" id="sliderRange" oninput="inputtowns()">
+                    <p>Value: <span id="value"></span></p>
+                  </div>
+                <div class="button">
+                    <button id="reload" oninput="inputtowns()" style="margin-right: 100px">Refresh Data</button>
+                </div>
+                <h3> Zoom into the map with mouse wheel or</h3>
+                <h3> Double click bubbles to zoom in</h3>
+                <h3> Roll over bubbles to view additional info</h3> 
+            </div>    
+        </div>
+	</div>
+	
+</body>
+</html>

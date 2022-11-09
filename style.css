@@ -1,0 +1,111 @@
+svg { margin: auto; }
+.buttons { margin-left : 160px; padding: 10px; }
+
+
+/* Colours retreived from colorbrewer2.org */
+/* .FID0 {  display: none; } Ireland */
+/* .FID1 { fill: #1488db; fill-opacity: 0.7; } Northern Ireland */
+/* .FID2 { fill: #0aa238; fill-opacity: 0.7; } Wales */
+/* .FID3 { fill: #f80303; fill-opacity: 0.7; } England */
+/* .FID4 { fill: #3206c0; fill-opacity: 0.7; } Scotland */
+/* .FID5 { fill: #88419d; fill-opacity: 0.7; } Isle of Man */
+/* .FID6 { display: none; } Faroe Islands - Don't display */
+
+.FID0 {  display: none; }  /* Ireland - Don't display */
+.FID1 { fill: rgb(34, 255, 0); } /*Northern Ireland */
+.FID2 { fill: rgb(255, 255, 0); }/* Wales */
+.FID3 { fill: rgb(255, 0, 0); }/* England */
+.FID4 { fill: rgb(30, 0, 255); } /*Scotland */
+.FID5 { fill: rgb(0, 0, 0); } /* Isle of Man */
+.FID6 { display: none; }/* Faroe Islands - Don't display */
+
+/* Styles for zooming */
+.pan rect,
+.zoom rect { fill: black; opacity: 0.1; }
+.zoom rect { rx: 5; ry: 5; }
+.pan text,
+.zoom text { fill: black; font-size: 20px; text-anchor: middle; font-weight: bolder; }
+.pan:hover rect,
+.pan:hover text,
+.zoom:hover rect,
+.zoom:hover text { fill: blue; }
+
+/* Styles for Circles which depict location of towns*/
+.circle { fill: #c605fc; stroke: #1d91c0; stroke-width: 2; fill-opacity: 0.6; }
+.circle:hover { fill: #ffffff; stroke: #175e7a; stroke-width: 2px; }
+
+/* Styles for tooltip*/
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    font-family: Garamond;
+    opacity: 1;
+    background-color: rgb(195, 108, 9);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.text {
+  background-color: rgb(172, 73, 2);
+  display: flex;
+  /* flex-direction: column; */
+  overflow: hidden;
+}
+
+.bground {
+  background-color: rgb(207, 169, 0);
+  display: flex;
+  /* flex-direction: column; */
+  overflow: hidden;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lside {
+  width: 70%;
+  display: flex;
+  flex-basis: content;
+}
+.rside {
+  /* width: 25%; */
+  min-width: 250px;
+  text-align: center; 
+}
+/* Range Slider */
+.rangeslider{
+  width: 50%;
+}
+
+.myslider {
+  -webkit-appearance: none;
+  background: #FCF3CF  ;
+  width: 50%;
+  height: 20px;
+  opacity: 2;
+ }
+
+
+.myslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #34495E  ;
+  width: 5%;
+  height: 20px;
+}
+
+
+.myslider:hover {
+  opacity: 1;
+}
+
+
+    #map {
+    border: 1px solid #ccc;
+    fill: #aaa;
+  }
+
+  
